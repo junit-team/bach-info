@@ -1,4 +1,4 @@
-package bach.info.org.junit;
+package run.info.org.junit;
 
 /**
  * JUnit 5.11.0-M2 = Platform 1.11.0-M2 + Jupiter 5.11.0-M2 + Vintage 5.11.0-M2
