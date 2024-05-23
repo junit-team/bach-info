@@ -11,29 +11,32 @@
 package run.info.org.junit;
 
 /**
- * JUnit 5.11.0-M2 = Platform 1.11.0-M2 + Jupiter 5.11.0-M2 + Vintage 5.11.0-M2
+ * JUnit 5.10.2 = Platform 1.10.2 + Jupiter 5.10.2 + Vintage 5.10.2
  *
- * @see <a href="https://github.com/junit-team/junit5/releases/tag/r5.11.0-M2">Release Notes</a>
+ * @see <a href="http://junit.org/junit5/docs/5.10.2/release-notes">Release Notes</a>
  */
 public interface JUnit {
   String REPOSITORY = "https://repo.maven.apache.org/maven2";
   String PROPERTIES = // language=properties
       """
 org.apiguardian.api=${REPOSITORY}/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar#SIZE=6806
-org.junit.jupiter.api=${REPOSITORY}/org/junit/jupiter/junit-jupiter-api/5.11.0-M2/junit-jupiter-api-5.11.0-M2.jar#SIZE=214992
-org.junit.jupiter.engine=${REPOSITORY}/org/junit/jupiter/junit-jupiter-engine/5.11.0-M2/junit-jupiter-engine-5.11.0-M2.jar#SIZE=252652
-org.junit.jupiter.params=${REPOSITORY}/org/junit/jupiter/junit-jupiter-params/5.11.0-M2/junit-jupiter-params-5.11.0-M2.jar#SIZE=581364
-org.junit.jupiter=${REPOSITORY}/org/junit/jupiter/junit-jupiter/5.11.0-M2/junit-jupiter-5.11.0-M2.jar#SIZE=6374
-org.junit.platform.commons=${REPOSITORY}/org/junit/platform/junit-platform-commons/1.11.0-M2/junit-platform-commons-1.11.0-M2.jar#SIZE=133055
-org.junit.platform.console=${REPOSITORY}/org/junit/platform/junit-platform-console/1.11.0-M2/junit-platform-console-1.11.0-M2.jar#SIZE=549251
-org.junit.platform.engine=${REPOSITORY}/org/junit/platform/junit-platform-engine/1.11.0-M2/junit-platform-engine-1.11.0-M2.jar#SIZE=238281
-org.junit.platform.jfr=${REPOSITORY}/org/junit/platform/junit-platform-jfr/1.11.0-M2/junit-platform-jfr-1.11.0-M2.jar#SIZE=19311
-org.junit.platform.launcher=${REPOSITORY}/org/junit/platform/junit-platform-launcher/1.11.0-M2/junit-platform-launcher-1.11.0-M2.jar#SIZE=188116
-org.junit.platform.reporting=${REPOSITORY}/org/junit/platform/junit-platform-reporting/1.11.0-M2/junit-platform-reporting-1.11.0-M2.jar#SIZE=107771
-org.junit.platform.suite.api=${REPOSITORY}/org/junit/platform/junit-platform-suite-api/1.11.0-M2/junit-platform-suite-api-1.11.0-M2.jar#SIZE=23771
-org.junit.platform.suite.commons=${REPOSITORY}/org/junit/platform/junit-platform-suite-commons/1.11.0-M2/junit-platform-suite-commons-1.11.0-M2.jar#SIZE=17864
-org.junit.platform.suite.engine=${REPOSITORY}/org/junit/platform/junit-platform-suite-engine/1.11.0-M2/junit-platform-suite-engine-1.11.0-M2.jar#SIZE=24487
-org.junit.platform.suite=${REPOSITORY}/org/junit/platform/junit-platform-suite/1.11.0-M2/junit-platform-suite-1.11.0-M2.jar#SIZE=6376
+org.junit.jupiter=${REPOSITORY}/org/junit/jupiter/junit-jupiter/5.10.2/junit-jupiter-5.10.2.jar#SIZE=6359
+org.junit.jupiter.api=${REPOSITORY}/org/junit/jupiter/junit-jupiter-api/5.10.2/junit-jupiter-api-5.10.2.jar#SIZE=210956
+org.junit.jupiter.engine=${REPOSITORY}/org/junit/jupiter/junit-jupiter-engine/5.10.2/junit-jupiter-engine-5.10.2.jar#SIZE=244690
+org.junit.jupiter.migrationsupport=${REPOSITORY}/org/junit/jupiter/junit-jupiter-migrationsupport/5.10.2/junit-jupiter-migrationsupport-5.10.2.jar#SIZE=27713
+org.junit.jupiter.params=${REPOSITORY}/org/junit/jupiter/junit-jupiter-params/5.10.2/junit-jupiter-params-5.10.2.jar#SIZE=586027
+org.junit.platform.commons=${REPOSITORY}/org/junit/platform/junit-platform-commons/1.10.2/junit-platform-commons-1.10.2.jar#SIZE=106232
+org.junit.platform.console=${REPOSITORY}/org/junit/platform/junit-platform-console/1.10.2/junit-platform-console-1.10.2.jar#SIZE=545571
+org.junit.platform.engine=${REPOSITORY}/org/junit/platform/junit-platform-engine/1.10.2/junit-platform-engine-1.10.2.jar#SIZE=204821
+org.junit.platform.jfr=${REPOSITORY}/org/junit/platform/junit-platform-jfr/1.10.2/junit-platform-jfr-1.10.2.jar#SIZE=19138
+org.junit.platform.launcher=${REPOSITORY}/org/junit/platform/junit-platform-launcher/1.10.2/junit-platform-launcher-1.10.2.jar#SIZE=183814
+org.junit.platform.reporting=${REPOSITORY}/org/junit/platform/junit-platform-reporting/1.10.2/junit-platform-reporting-1.10.2.jar#SIZE=106950
+org.junit.platform.suite=${REPOSITORY}/org/junit/platform/junit-platform-suite/1.10.2/junit-platform-suite-1.10.2.jar#SIZE=6362
+org.junit.platform.suite.api=${REPOSITORY}/org/junit/platform/junit-platform-suite-api/1.10.2/junit-platform-suite-api-1.10.2.jar#SIZE=22575
+org.junit.platform.suite.commons=${REPOSITORY}/org/junit/platform/junit-platform-suite-commons/1.10.2/junit-platform-suite-commons-1.10.2.jar#SIZE=17326
+org.junit.platform.suite.engine=${REPOSITORY}/org/junit/platform/junit-platform-suite-engine/1.10.2/junit-platform-suite-engine-1.10.2.jar#SIZE=24117
+org.junit.platform.testkit=${REPOSITORY}/org/junit/platform/junit-platform-testkit/1.10.2/junit-platform-testkit-1.10.2.jar#SIZE=44401
+org.junit.vintage.engine=${REPOSITORY}/org/junit/vintage/junit-vintage-engine/5.10.2/junit-vintage-engine-5.10.2.jar#SIZE=67479
 org.opentest4j=${REPOSITORY}/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar#SIZE=14304
 """;
   String MODULES = PROPERTIES.replace("${REPOSITORY}", REPOSITORY);
