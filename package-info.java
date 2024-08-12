@@ -8,5 +8,5 @@
  * https://www.eclipse.org/legal/epl-v20.html
  */
 
-/** Information about modules and tools provided by JUnit 5.11.0-M2 */
+/** Information about modules and tools provided by JUnit 5.11.0-RC1 */
 package run.info.org.junit;
