@@ -18,20 +18,20 @@ import run.bach.ModuleLocator;
  * @see <a href="https://junit.org/junit5">Homepage</a>
  */
 public interface JUnit {
-  /** {@return a locator for modular JAR files of JUnit 5.12.0-M1} */
+  /** {@return a locator for modular JAR files of JUnit 5.12.0} */
   static ModuleLocator modules() {
     return ModuleLocator.compose(
         ModuleLocator.of("org.apiguardian.api", "pkg:maven/org.apiguardian/apiguardian-api@1.1.2"),
         JUnitLocator.of(
             "org.junit.jupiter",
-            "5.12.0-M1",
+            "5.12.0",
             "org.junit.jupiter",
             "org.junit.jupiter.api",
             "org.junit.jupiter.engine",
             "org.junit.jupiter.params"),
         JUnitLocator.of(
             "org.junit.platform",
-            "1.12.0-M1",
+            "1.12.0",
             "org.junit.platform.commons",
             "org.junit.platform.console",
             "org.junit.platform.engine",
@@ -46,6 +46,6 @@ public interface JUnit {
             ModuleLocator.of("org.opentest4j", "pkg:maven/org.opentest4j/opentest4j@1.3.0"),
             ModuleLocator.of(
                 "org.opentest4j.reporting.tooling.spi",
-                "pkg:maven/org.opentest4j.reporting/open-test-reporting-tooling-spi@0.2.0-M2")));
+                "pkg:maven/org.opentest4j.reporting/open-test-reporting-tooling-spi@0.2.0")));
   }
 }
